@@ -4,17 +4,10 @@ const identifier = () => {
 };
 
 class Product {
-  description: string;
   id: number;
-  price: number;
-  name: string;
 
-  constructor(desc: string, price: number, name: string) {
+  constructor(public description: string, public price: number, public name: string) {
     this.id = identifier();
-    
-    this.description = desc;
-    this.price = price;
-    this.name = name;
   }
 }
 

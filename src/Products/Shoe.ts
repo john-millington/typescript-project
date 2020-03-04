@@ -1,12 +1,8 @@
 import Product from './Product';
 
 class Shoe extends Product {
-  size: number;
-
-  constructor(desc: string, price: number, name: string, size: number) {
+  constructor(desc: string, price: number, name: string, public size: number) {
     super(desc, price, name);
-
-    this.size = size;
   }
 }
 
